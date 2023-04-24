@@ -118,9 +118,6 @@ body {
   letter-spacing: -1px;
 }
 
-#es-garnier.es-garnier .es-kv__packshotCtn {
-
-}
 #es-garnier.es-garnier .es-kv__packshot {
   width: 130px;
  position: relative;
@@ -174,6 +171,13 @@ body {
 
 #es-garnier.es-garnier .es-intro__container {
   /* padding: 16px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 0.5fr 1fr 1fr; 
+  grid-template-areas: 
+    ". title"
+    "pics before-after"
+    "pics before-after"; 
 }
 
 #es-garnier.es-garnier .es-intro__container:nth-child(odd) {
@@ -185,16 +189,35 @@ body {
 
 #es-garnier.es-garnier .es-intro__packshot {
   /* margin-bottom: 16px; */
+  grid-area: pics;
+  outline: 1px solid blue;
 }
 
 #es-garnier.es-garnier .es-intro__packshot--3 {
   /* margin-top: -32px; */
 }
 
-#es-garnier.es-garnier .es-intro__img {
+#es-garnier.es-garnier .es-intro__packshot .es-intro__img {
   /* max-width: 100%;
   display: block;
   margin: 0 auto; */
+  /* position: relative; */
+}
+
+#es-garnier.es-garnier #es-intro__capsule {
+
+}
+
+#es-garnier.es-garnier #es-intro__product {
+position: absolute;
+}
+
+#es-garnier.es-garnier #es-intro__badge {
+position: absolute;
+}
+
+#es-garnier.es-garnier .es-intro__content--1 {
+  grid-area: title;
 }
 
 #es-garnier.es-garnier .es-intro__title {
@@ -232,6 +255,11 @@ body {
 
 #es-garnier.es-garnier .es-intro__intro-subtitle span {
   font-size: 2em;
+}
+
+#es-garnier.es-garnier .es-intro__content--2 {
+  grid-area: before-after;
+  outline: 1px solid red;
 }
 
 #es-garnier.es-garnier .es-intro__image {
