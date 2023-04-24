@@ -3,26 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Garnier</title>
+    <title>Garnier Vit C krem pod oczy</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    /> -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="es-garnier" id="es-garnier">
       <div class="es-kv">
         <div class="es-kv__container">
-          <div class="es-kv__photo">
+          <div class="es-kv__imgCtn">
+          </div>
+          <div class="es-kv__contentCtn">
+            <div class="es-kv__logoCtn">
+              <img src="./img/garnier-logo.png" alt="garnier" class="es-kv__logo">
+            </div>
+            <div class="es-kv__content">
+              <div class="es-kv__text">
+                <p class="es-kv__title">vitamin <span>C</span></p>
+                <p class="es-kv__subtitle">
+                  rozświetlający </br>
+                  <strong>krem pod oczy</strong>
+                </p>
+              </div>
+            </div>
+            
+            <div class="es-kv__packshotCtn">
+              <img src="./img/kv-packshot.png" alt="Vitamin C krem pod oczy" class="es-kv__packshot">
+            </div>
+          </div>
+
+          <!-- <div class="es-kv__photo">
             <img
-              src="img/photo.png"
-              alt=""
+              src="img/hero-photo.png"
+              alt="młoda pani używająca kremu pod oczy od Garnier"
               class="es-kv__img es-kv__img--photo"
             />
           </div>
@@ -30,14 +51,14 @@
             <div class="es-kv__text">
               <p class="es-kv__title">vitamin <span>C</span></p>
               <p class="es-kv__subtitle">
-                <strong>SERUM</strong><br />
-                na przebarwienia
+                rozświetlający </br>
+                <strong>krem pod oczy</strong>
               </p>
             </div>
             <div class="es-kv__image">
-              <img src="img/photo-2.png" alt="" class="es-kv__img" />
+              <img src="img/hero-bg.png" alt="" class="es-kv__img" />
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -436,32 +457,32 @@
     </div>
     <script src="slider.js"></script>
     <script>
-      var swiper = new Swiper('.swiper', {
+      var swiper = new Swiper(".swiper", {
         loop: true,
         autoHeight: false,
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
         pagination: {
-          el: '.swiper-pagination',
-          clickable: true
-        }
-      })
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
     </script>
     <script>
-      var swiper = new Swiper('.swiper-cross', {
+      var swiper = new Swiper(".swiper-cross", {
         loop: true,
         autoHeight: false,
         navigation: {
-          nextEl: '.swiper-cross-button-next',
-          prevEl: '.swiper-cross-button-prev'
+          nextEl: ".swiper-cross-button-next",
+          prevEl: ".swiper-cross-button-prev",
         },
         pagination: {
-          el: '.swiper-cross-pagination',
-          clickable: true
-        }
-      })
+          el: ".swiper-cross-pagination",
+          clickable: true,
+        },
+      });
     </script>
   </body>
 </html>
