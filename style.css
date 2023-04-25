@@ -603,6 +603,131 @@ width: 40ch;
 }
 
 /*********************************************/
+/********* results section styles ***********/
+/*********************************************/
+
+#es-garnier.es-garnier .es-results {
+  margin: 50px 0;
+}
+#es-garnier.es-garnier .es-results__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  outline: 1px solid blue;
+}
+#es-garnier.es-garnier .es-results__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 22px;
+}
+#es-garnier.es-garnier .es-results__package {
+  padding: 20px 50px;
+
+  width: 50%;
+  
+  /* min-width: 200px; */
+  /* max-height: 300px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-right: -50px; */
+  align-items: flex-start;
+}
+#es-garnier.es-garnier .es-results__single {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#es-garnier.es-garnier .es-results__single p {
+  font-size: 12px;
+  /* max-width: 13ch; */
+}
+
+@media screen and (min-width: 420px) {
+  #es-garnier.es-garnier .es-results__single p {
+    max-width: unset;
+  }
+}
+
+#es-garnier.es-garnier .es-results__number {
+  margin-right: 10px;
+}
+#es-garnier.es-garnier .es-results__packshotImg {
+  /* margin-right: -50px; */
+  height: 300px;
+  z-index: 10;
+  position: relative;
+
+}
+/* #es-garnier.es-garnier .es-results__packshotImg:hover {
+  transform: translateX(20px);
+  transition: 0.5s ease;
+} */
+
+#es-garnier.es-garnier .es-results__effect {
+width: 84%;
+margin: 10% auto;
+background-color: rgba(234, 96, 19, 0.93);
+color: white;
+border-radius: 8px;
+padding: 10px 20px;
+
+outline: 1px solid blue;
+}
+
+#es-garnier.es-garnier .es-results__effect .es-results__title,
+#es-garnier.es-garnier .es-results__effect .es-results__ul {
+  color: white;
+  text-align: left;
+}
+
+#es-garnier.es-garnier .es-results__effect::before {
+  content: url(./img/results-packshot.png);
+  position: absolute;
+  z-index: 999;
+  left: 50%;
+}
+
+#es-garnier.es-garnier .es-results__effect:hover::before {
+  transform: translateX(20px);
+  transition: 0.5s ease;
+}
+
+#es-garnier.es-garnier .es-results__wrapper {
+  /* position: relative;
+  z-index: 1; */
+
+}
+
+#es-garnier.es-garnier .es-results__bg-right {
+  background-image: url(./img/results-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 300px;
+}
+/* #es-garnier.es-garnier .es-results__wrapper img {
+  max-width: 400px;
+  z-index: 0;
+  width: 100%;
+  position: relative;
+} */
+#es-garnier.es-garnier .es-results__elipsa {
+  position: absolute;
+  z-index: -10;
+  width: 250px;
+  height: 250px;
+  background-color: #f3f3f3;
+  border-radius: 50%;
+  bottom: -120px;
+  right: -100px;
+}
+
+/*********************************************/
 /************ apply section styles ***********/
 /*********************************************/
 
@@ -678,6 +803,10 @@ width: 40ch;
   font-family: inherit;
   font-weight: inherit;
 }
+
+/*********************************************/
+/************ info section styles ***********/
+/*********************************************/
 
 #es-garnier.es-garnier .es-info {
   margin-bottom: 32px;
@@ -810,6 +939,10 @@ width: 40ch;
   font-weight: inherit;
   font-size: 13px;
 }
+
+/*********************************************/
+/********** cross sell section styles ********/
+/*********************************************/
 
 #es-garnier.es-garnier .es-cross {
   position: relative;
@@ -1020,6 +1153,8 @@ width: 40ch;
   opacity: 1;
   background: #000;
 }
+
+
 
 #es-garnier.es-garnier .es-footer {
   padding: 0;
