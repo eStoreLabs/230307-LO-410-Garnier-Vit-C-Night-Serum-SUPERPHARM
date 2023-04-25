@@ -124,15 +124,14 @@ body {
  top: 20px;
 }
 
-@media screen and (min-width: 900px) {
-  #es-garnier.es-garnier .es-kv__imgCtn {
-    background-image: url(./img/hero-photo.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-    width: 550px;
+@media screen and (min-width: 425px) {
+  #es-garnier.es-garnier .es-kv__title {
+    font-size: 32px;
+  }
+  #es-garnier.es-garnier .es-kv__subtitle {
+    font-size: 25px;
   }
 }
-
 @media screen and (min-width: 768px) {
   #es-garnier.es-garnier .es-kv {
     margin-bottom: 32px;
@@ -154,6 +153,15 @@ body {
   #es-garnier.es-garnier .es-kv__packshot {
     width: 120px;
     top: 10px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #es-garnier.es-garnier .es-kv__imgCtn {
+    background-image: url(./img/hero-photo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+    width: 550px;
   }
 }
 
@@ -339,99 +347,8 @@ width: 40ch;
 }
 
 /*********************************************/
-/************ ingredients styles *************/
+/************** benefits styles **************/
 /*********************************************/
-
-#es-garnier.es-garnier .es-ingredients {
-  padding: 16px;
-}
-
-#es-garnier.es-garnier .es-ingredients__img {
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
-}
-
-#es-garnier.es-garnier .es-ingredients__cards {
-  margin: 32px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 460px;
-}
-
-#es-garnier.es-garnier .es-ingredients__single {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  margin: 8px;
-  max-width: 212px;
-  max-height: 224px;
-  padding: 24px 8px;
-  background: #fff;
-  border: none;
-  border-radius: 16px;
-  -webkit-box-shadow: 4px 8px 32px rgba(0, 0, 0, 0.08);
-          box-shadow: 4px 8px 32px rgba(0, 0, 0, 0.08);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-#es-garnier.es-garnier .es-ingredients__single:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-#es-garnier.es-garnier .es-ingredients__text {
-  margin: 0;
-  padding: 0;
-  line-height: inherit;
-  color: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: 15px;
-  padding-top: 16px;
-  text-align: center;
-}
-
-#es-garnier.es-garnier .es-ingredients__text span {
-  font-size: 16px;
-  display: block;
-  margin-bottom: 4px;
-  font-weight: 700;
-}
-
-#es-garnier.es-garnier .es-ingredients__cards .es-ingredients__single {
-  opacity: 1;
-}
-
-#es-garnier.es-garnier .es-ingredients__cards:hover .es-ingredients__single {
-  opacity: 0.8;
-}
-
-#es-garnier.es-garnier .es-ingredients__cards .es-ingredients__single:hover {
-  opacity: 1;
-}
-
-#es-garnier.es-garnier .es-ingredients__disclaimer {
-  margin: 0;
-  padding: 0;
-  line-height: inherit;
-  color: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-  padding: 16px;
-  font-size: 13px;
-  text-align: center;
-  width: 100%;
-}
 
 #es-garnier.es-garnier .es-benefits {
   position: relative;
@@ -532,6 +449,153 @@ width: 40ch;
   position: relative;
   z-index: -1;
 }
+
+@media screen and (min-width: 768px) {
+  #es-garnier.es-garnier .es-benefits {
+    margin: 80px 0 64px 0;
+    position: relative;
+  }
+  #es-garnier.es-garnier .es-benefits__texts {
+    position: absolute;
+    max-width: 300px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #es-garnier.es-garnier .es-benefits__texts--1 {
+    top: 0px;
+    left: 66%;
+    padding-right: 16px;
+  }
+  #es-garnier.es-garnier .es-benefits__texts--1::before {
+    content: url("img/border-line-1.png");
+    position: absolute;
+    top: 46px;
+    left: -154px;
+  }
+  #es-garnier.es-garnier .es-benefits__texts--2 {
+    bottom: 0;
+    left: 58%;
+    padding-left: 16px;
+  }
+  #es-garnier.es-garnier .es-benefits__texts--2::before {
+    content: url("img/border-line-3.png");
+    position: absolute;
+    top: -119px;
+    left: -45px;
+  }
+  #es-garnier.es-garnier .es-benefits__texts--3 {
+    bottom: 100px;
+    right: 68%;
+    padding-left: 16px;
+  }
+  #es-garnier.es-garnier .es-benefits__texts--3::before {
+    content: url("img/border-line-2.png");
+    position: absolute;
+    top: 6px;
+    right: -190px;
+  }
+  #es-garnier.es-garnier .es-benefits__name {
+    max-width: 270px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+/*********************************************/
+/************ ingredients styles *************/
+/*********************************************/
+
+#es-garnier.es-garnier .es-ingredients {
+  padding: 16px;
+}
+
+#es-garnier.es-garnier .es-ingredients__img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#es-garnier.es-garnier .es-ingredients__cards {
+  margin: 32px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 460px;
+}
+
+#es-garnier.es-garnier .es-ingredients__single {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin: 8px;
+  max-width: 212px;
+  max-height: 224px;
+  padding: 24px 8px;
+  background: #fff;
+  border: none;
+  border-radius: 16px;
+  -webkit-box-shadow: 4px 8px 32px rgba(0, 0, 0, 0.08);
+          box-shadow: 4px 8px 32px rgba(0, 0, 0, 0.08);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#es-garnier.es-garnier .es-ingredients__single:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#es-garnier.es-garnier .es-ingredients__text {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 15px;
+  padding-top: 16px;
+  text-align: center;
+}
+
+#es-garnier.es-garnier .es-ingredients__text span {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+#es-garnier.es-garnier .es-ingredients__cards .es-ingredients__single {
+  opacity: 1;
+}
+
+#es-garnier.es-garnier .es-ingredients__cards:hover .es-ingredients__single {
+  opacity: 0.8;
+}
+
+#es-garnier.es-garnier .es-ingredients__cards .es-ingredients__single:hover {
+  opacity: 1;
+}
+
+#es-garnier.es-garnier .es-ingredients__disclaimer {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  padding: 16px;
+  font-size: 13px;
+  text-align: center;
+  width: 100%;
+}
+
 
 #es-garnier.es-garnier .es-apply {
   margin: 48px 0;
@@ -994,65 +1058,11 @@ width: 40ch;
           justify-content: space-evenly;
 }
 
-@media screen and (min-width: 425px) {
-  #es-garnier.es-garnier .es-kv__title {
-    font-size: 32px;
-  }
-  #es-garnier.es-garnier .es-kv__subtitle {
-    font-size: 25px;
-  }
-}
+
 
 @media screen and (min-width: 768px) {
 
-  #es-garnier.es-garnier .es-benefits {
-    margin: 80px 0 64px 0;
-    position: relative;
-  }
-  #es-garnier.es-garnier .es-benefits__texts {
-    position: absolute;
-    max-width: 300px;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  #es-garnier.es-garnier .es-benefits__texts--1 {
-    top: 0px;
-    left: 66%;
-    padding-right: 16px;
-  }
-  #es-garnier.es-garnier .es-benefits__texts--1::before {
-    content: url("img/border-line-1.png");
-    position: absolute;
-    top: 46px;
-    left: -154px;
-  }
-  #es-garnier.es-garnier .es-benefits__texts--2 {
-    bottom: 0;
-    left: 58%;
-    padding-left: 16px;
-  }
-  #es-garnier.es-garnier .es-benefits__texts--2::before {
-    content: url("img/border-line-3.png");
-    position: absolute;
-    top: -119px;
-    left: -45px;
-  }
-  #es-garnier.es-garnier .es-benefits__texts--3 {
-    bottom: 100px;
-    right: 68%;
-    padding-left: 16px;
-  }
-  #es-garnier.es-garnier .es-benefits__texts--3::before {
-    content: url("img/border-line-2.png");
-    position: absolute;
-    top: 6px;
-    right: -190px;
-  }
-  #es-garnier.es-garnier .es-benefits__name {
-    max-width: 270px;
-    margin-left: 0;
-    margin-right: auto;
-  }
+
   #es-garnier.es-garnier .es-apply {
     max-width: 900px;
     margin: 0 auto;
