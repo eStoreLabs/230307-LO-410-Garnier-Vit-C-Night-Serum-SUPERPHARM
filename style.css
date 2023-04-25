@@ -399,7 +399,7 @@ width: 40ch;
   position: relative;
   color: #e9560d;
 }
-
+ /* [] jako ::before and ::after */
 #es-garnier.es-garnier .es-benefits__label::before {
   content: url(img/border-1.png);
   position: absolute;
@@ -430,7 +430,8 @@ width: 40ch;
 }
 
 #es-garnier.es-garnier .es-benefits__name span {
-  font-size: 16px;
+  /* font-size: 16px; */
+  text-transform: none;
 }
 
 #es-garnier.es-garnier .es-benefits__text {
@@ -462,38 +463,51 @@ width: 40ch;
     transition: all 0.3s;
   }
   #es-garnier.es-garnier .es-benefits__texts--1 {
-    top: 0px;
-    left: 66%;
-    padding-right: 16px;
+
   }
   #es-garnier.es-garnier .es-benefits__texts--1::before {
     content: url("img/border-line-1.png");
     position: absolute;
+    top: 45px;
+    left: 298px;
+  }
+
+  #es-garnier.es-garnier .es-benefits__texts--2 {
+    top: 50px;
+    left: 66%;
+    padding-right: 16px;
+  }
+   /* linia odnośnika do obrazka jest wstawiona jako ::before dla każdego elementu z osobna*/
+  #es-garnier.es-garnier .es-benefits__texts--2::before {
+    content: url("img/border-line-2.png");
+    position: absolute;
     top: 46px;
     left: -154px;
   }
-  #es-garnier.es-garnier .es-benefits__texts--2 {
-    bottom: 0;
-    left: 58%;
-    padding-left: 16px;
-  }
-  #es-garnier.es-garnier .es-benefits__texts--2::before {
-    content: url("img/border-line-3.png");
-    position: absolute;
-    top: -119px;
-    left: -45px;
-  }
-  #es-garnier.es-garnier .es-benefits__texts--3 {
+   #es-garnier.es-garnier .es-benefits__texts--3 {
     bottom: 100px;
     right: 68%;
     padding-left: 16px;
   }
   #es-garnier.es-garnier .es-benefits__texts--3::before {
-    content: url("img/border-line-2.png");
+    content: url("img/border-line-3.png");
     position: absolute;
     top: 6px;
     right: -190px;
+  } 
+  #es-garnier.es-garnier .es-benefits__texts--4 {
+    bottom: 10px;
+    left: 58%;
+    padding-left: 16px;
   }
+ 
+  #es-garnier.es-garnier .es-benefits__texts--4::before {
+    content: url("img/border-line-4.png");
+    position: absolute;
+    top: -119px;
+    left: -45px;
+  }
+
   #es-garnier.es-garnier .es-benefits__name {
     max-width: 270px;
     margin-left: 0;
