@@ -252,12 +252,6 @@ grid-area: text;
 width: 40ch;
 }
 
-@supports (text-wrap: balance) {
-  #es-garnier.es-garnier .es-intro__content--3 {
-    text-wrap: balance;
-  }
-}
-
 #es-garnier.es-garnier .es-intro__content--3 h3 {
   line-height: 1.5em;
 }
@@ -462,9 +456,7 @@ width: 40ch;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
-  #es-garnier.es-garnier .es-benefits__texts--1 {
 
-  }
   #es-garnier.es-garnier .es-benefits__texts--1::before {
     content: url("img/border-line-1.png");
     position: absolute;
