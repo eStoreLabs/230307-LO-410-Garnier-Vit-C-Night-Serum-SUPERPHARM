@@ -573,7 +573,7 @@ width: 40ch;
   color: inherit;
   font-family: inherit;
   font-weight: inherit;
-  font-size: 15px;
+  font-size: 14px;
   padding-top: 16px;
   text-align: center;
 }
@@ -610,6 +610,9 @@ width: 40ch;
   width: 100%;
 }
 
+/*********************************************/
+/************ apply section styles ***********/
+/*********************************************/
 
 #es-garnier.es-garnier .es-apply {
   margin: 48px 0;
@@ -1277,6 +1280,7 @@ width: 40ch;
   }
   #es-garnier.es-garnier .es-ingredients__img-packshot {
     margin-right: auto;
+    max-width: 80%;
   }
   #es-garnier.es-garnier .es-ingredients__wrapper, #es-garnier.es-garnier .es-ingredients__content {
     -webkit-box-flex: 1;
