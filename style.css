@@ -46,32 +46,168 @@ body {
   width: 100%;
 }
 
-#es-garnier.es-garnier .es-kv__container {
+/*****************************************/
+/********* copied part ******************/
+/*****************************************/
+
+#es-garnier.es-garnier .es-kv__content {
+  margin-top: -12px;
+  position: relative;
+}
+
+#es-garnier.es-garnier .es-kv__text {
+  position: absolute;
+  top: 35%;
+  left: 38%;
+  padding-right: 16px;
+}
+
+/* #es-garnier.es-garnier .es-kv__logo {
+  margin-bottom: 32px;
+} */
+
+#es-garnier.es-garnier .es-kv__img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#es-garnier.es-garnier .es-kv__title {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-weight: 600;
+  font-size: 27px;
+  text-transform: uppercase;
+  line-height: 1;
+  color: #e75e1c;
+  font-size: 26px;
+  position: relative;
+  z-index: 1;
+}
+
+#es-garnier.es-garnier .es-kv__title span {
+  font-size: 2.25em;
+}
+
+#es-garnier.es-garnier .es-kv__subtitle {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+@media screen and (min-width: 425px) {
+  #es-garnier.es-garnier .es-kv__title {
+    font-size: 32px;
+  }
+  #es-garnier.es-garnier .es-kv__subtitle {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #es-garnier.es-garnier {
+    max-width: 998px;
+  }
+  #es-garnier.es-garnier .es-kv {
+    margin-bottom: 32px;
+  }
+  #es-garnier.es-garnier .es-kv__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #es-garnier.es-garnier .es-kv__title {
+    font-size: 40px;
+  }
+  #es-garnier.es-garnier .es-kv__subtitle {
+    font-size: 28px;
+  }
+  
+  #es-garnier.es-garnier .es-kv__photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#es-garnier.es-garnier .es-kv__content {
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+  margin-left: -56px;
+  padding-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#es-garnier.es-garnier .es-kv__content img {
+  min-height: 357px;
+  /* max-width: none; */
+}
+#es-garnier.es-garnier .es-kv__image {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+#es-garnier.es-garnier .es-kv__packshot {
+  margin-top: -262px;
+}
+#es-garnier.es-garnier .es-kv__img--photo {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 12%;
+     object-position: 12%;
+  height: 100%;
+}
+
+}
+
+/*****************************************/
+/********* end of copied part ************/
+/*****************************************/
+
+
+/* #es-garnier.es-garnier .es-kv__container {
   display: grid;
   grid-template: 
     "b b a" auto
     "b b c"
     "b b c";
-}
+} */
 
-#es-garnier.es-garnier .es-kv__imgCtn {
+/* #es-garnier.es-garnier .es-kv__imgCtn {
   grid-area: b;
-}
+} */
 
 
 /* logo */
-#es-garnier.es-garnier .es-kv__logoCtn {
+/* #es-garnier.es-garnier .es-kv__logoCtn {
   grid-area: a;
   position: relative;
   left: 5%;
   bottom: -5%;
-}
+} */
 
-#es-garnier.es-garnier .es-kv__logo {
+/* #es-garnier.es-garnier .es-kv__logo {
   width: 90%;
-}
+} */
 
-#es-garnier.es-garnier .es-kv__content {
+/* #es-garnier.es-garnier .es-kv__content {
   grid-area: c;
   height: 300px;
   display: flex;
@@ -83,14 +219,14 @@ body {
   padding-right: 2%;
   background-image: url(./img/hero-bg.png);
   background-size: cover;
-}
+} */
 
 
-#es-garnier.es-garnier .es-kv__text {
+/* #es-garnier.es-garnier .es-kv__text {
   padding-right: 10%;
-}
+} */
 
-#es-garnier.es-garnier .es-kv__title {
+/* #es-garnier.es-garnier .es-kv__title {
   line-height: inherit;
   color: inherit;
   font-family: inherit;
@@ -101,12 +237,12 @@ body {
   line-height: 1;
   color: #e75e1c;
   font-size: 26px;
-}
-#es-garnier.es-garnier .es-kv__title span {
+} */
+/* #es-garnier.es-garnier .es-kv__title span {
   font-size: 3em;
-}
+} */
 
-#es-garnier.es-garnier .es-kv__subtitle {
+/* #es-garnier.es-garnier .es-kv__subtitle {
  line-height: inherit;
   color: inherit;
   font-family: inherit;
@@ -116,23 +252,23 @@ body {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: -1px;
-}
+} */
 
-#es-garnier.es-garnier .es-kv__packshot {
+/* #es-garnier.es-garnier .es-kv__packshot {
   width: 130px;
  position: relative;
  top: 20px;
-}
+} */
 
-@media screen and (min-width: 425px) {
+/* @media screen and (min-width: 425px) {
   #es-garnier.es-garnier .es-kv__title {
     font-size: 32px;
   }
   #es-garnier.es-garnier .es-kv__subtitle {
     font-size: 25px;
   }
-}
-@media screen and (min-width: 768px) {
+} */
+/* @media screen and (min-width: 768px) {
   #es-garnier.es-garnier .es-kv {
     margin-bottom: 32px;
   }
@@ -154,16 +290,16 @@ body {
     width: 120px;
     top: 10px;
   }
-}
+} */
 
-@media screen and (min-width: 900px) {
+/* @media screen and (min-width: 900px) {
   #es-garnier.es-garnier .es-kv__imgCtn {
     background-image: url(./img/hero-photo.png);
   background-size: cover;
   background-repeat: no-repeat;
     width: 550px;
   }
-}
+} */
 
 /*********************************************/
 /*************** intro styles ***************/
