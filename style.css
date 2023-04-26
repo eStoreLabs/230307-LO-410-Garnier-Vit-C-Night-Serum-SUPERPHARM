@@ -21,6 +21,7 @@ body {
   overflow: hidden;
   color: #111;
   background: #fff;
+  max-width: 998px;
 }
 
 #es-garnier.es-garnier * {
@@ -361,8 +362,8 @@ body {
     grid-area: drop;
     position: relative;
     z-index: 99;
-    top: -48px;
-    margin-left: 70px;
+    top: -30px;
+    margin-left: 120px;
   }
 }
 
