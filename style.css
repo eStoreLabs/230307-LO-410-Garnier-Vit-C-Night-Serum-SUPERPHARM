@@ -14,7 +14,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
-  max-width: 500px;
+  /*max-width: 500px;*/
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
@@ -22,11 +22,11 @@ body {
   background: #fff;
 }
 
-@media screen and (min-width: 768px) {
+/*@media screen and (min-width: 768px) {
   #es-garnier.es-garnier {
     max-width: 998px;
   }
-}
+}*/
 
 #es-garnier.es-garnier * {
   -webkit-box-sizing: border-box;
